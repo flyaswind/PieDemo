@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sf="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--<attr name="xy_line_color" format="color" />&lt;!&ndash;xy轴线条颜色&ndash;&gt;-->
+    <!--<attr name="x_name_color" format="color" />&lt;!&ndash;x轴文字颜色&ndash;&gt;-->
+    <!--<attr name="y_name_color" format="color" />&lt;!&ndash;y轴文字颜色&ndash;&gt;-->
+    <!--<attr name="a_color" format="color" />&lt;!&ndash;第一条柱状图颜色&ndash;&gt;-->
+    <!--<attr name="b_color" format="color" />&lt;!&ndash;第二条柱状图颜色&ndash;&gt;-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <com.flyaswind.customchartview.ChartView
+            android:id="@+id/pieview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            sf:a_color="#ff0000"
+            sf:b_color="#c250c2"
+            sf:bean_unit_space="25dp"
+            sf:columar_radius="8dp"
+            sf:columnar_space="10dp"
+            sf:columnar_width="8dp"
+            sf:data_space="25dp"
+            sf:x_left_space="25dp"
+            sf:x_name_color="#ff0000"
+            sf:x_name_size="15sp"
+            sf:x_name_space_to_x="5dp"
+            sf:xy_line_color="#000000"
+            sf:y_bottom_space="50dp"
+            sf:y_divider_color="#ff0000"
+            sf:y_divider_size="3dp"
+            sf:y_name_color="#d96518"
+            sf:y_name_size="15sp"
+            sf:y_top_space="25dp" />
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

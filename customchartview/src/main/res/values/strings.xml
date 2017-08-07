@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CustomChartView</string>
+    <declare-styleable name="ChartView">
+        <attr name="xy_line_color" format="color" /><!--xy轴线条颜色-->
+        <attr name="x_name_color" format="color" /><!--x轴文字颜色-->
+        <attr name="y_name_color" format="color" /><!--y轴文字颜色-->
+        <attr name="a_color" format="color" /><!--第一条柱状图颜色-->
+        <attr name="b_color" format="color" /><!--第二条柱状图颜色-->
+        <attr name="y_divider_color" format="color" /><!--y轴分割的颜色-->
+        <attr name="y_divider_size" format="dimension" /><!--y轴分割线长度-->
+        <attr name="columnar_width" format="dimension" /><!--条柱状宽度-->
+        <attr name="columnar_space" format="dimension" /><!--条柱状间宽度-->
+        <attr name="data_space" format="dimension" /><!--数据间宽度-->
+        <attr name="x_name_size" format="dimension" /><!--x轴字体大小-->
+        <attr name="y_name_size" format="dimension" /><!--数据间宽度-->
+        <attr name="x_left_space" format="dimension" /><!--x轴距离左边的距离-->
+        <attr name="y_bottom_space" format="dimension" /><!--y轴距离下边的距离-->
+        <attr name="y_top_space" format="dimension" /><!--y轴距离上边的距离-->
+        <attr name="bean_unit_space" format="dimension" /><!--不同组别间距离-->
+        <attr name="columar_radius" format="dimension" /><!--柱状图圆角-->
+        <attr name="x_name_space_to_x" format="dimension" /><!--x轴内容与x轴之间的距离-->
+    </declare-styleable>
+</resources>
