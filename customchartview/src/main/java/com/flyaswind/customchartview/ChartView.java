@@ -133,8 +133,17 @@ public class ChartView extends View {
             canvas.drawRoundRect(new RectF(left + columnarWidth + columnSpace, bHeight, left + columnarWidth * 2 + columnSpace, xLineTop + columnRadius), columnRadius, columnRadius, mPaint);
             //下面取消圆角
             Drawable background = getBackground();
-            ColorDrawable colorDrawable = (ColorDrawable) background;
-            mPaint.setColor(colorDrawable.getColor());
+            if (background!=null) {
+                try {
+                    ColorDrawable colorDrawable = (ColorDrawable) background;
+                    mPaint.setColor(colorDrawable.getColor());
+                }catch (Exception e){
+                    mPaint.setColor(Color.WHITE);
+                }
+
+            }else{
+                mPaint.setColor(Color.WHITE);
+            }
             canvas.drawRect(new RectF(left, xLineTop, left + columnarWidth, xLineTop + columnRadius), mPaint);
             canvas.drawRect(new RectF(left + columnarWidth + columnSpace, xLineTop, left + columnarWidth * 2 + columnSpace, xLineTop + columnRadius), mPaint);
             mPaint.setColor(xyLineColor);

@@ -25,7 +25,7 @@
             android:id="@+id/pieview"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#e5e5e5"
+            android:background="@mipmap/ic_launcher"
             sf:a_color="#ff0000"
             sf:b_color="#c250c2"
             sf:bean_unit_space="25dp"
